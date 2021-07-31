@@ -1,4 +1,4 @@
-# Pre-work - *Tip in Your  Finger Tips*
+# Pre-work - *Quick Tip*
 
 **Quick Tip** is a tip calculator application for iOS.
 
