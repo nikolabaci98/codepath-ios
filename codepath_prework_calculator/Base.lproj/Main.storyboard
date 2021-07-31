@@ -113,7 +113,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="billAmountTextFilled" destination="DMJ-hU-bbz" id="utK-Yx-CU3"/>
+                        <outlet property="billAmountTextField" destination="DMJ-hU-bbz" id="utK-Yx-CU3"/>
                         <outlet property="tipAmountLabel" destination="V3f-AB-lDa" id="RUD-LX-rd0"/>
                         <outlet property="tipControl" destination="9Wk-6k-ycH" id="29F-We-ImH"/>
                         <outlet property="totalLabel" destination="8wd-uE-AoN" id="xAZ-g1-7Sf"/>

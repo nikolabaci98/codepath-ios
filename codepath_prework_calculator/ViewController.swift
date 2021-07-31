@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var billAmountTextFilled: UITextField!
+    @IBOutlet weak var billAmountTextField: UITextField!
     @IBOutlet weak var tipAmountLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
@@ -19,21 +19,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        billAmountTextFilled.keyboardType = .numberPad
+        billAmountTextField.keyboardType = .numberPad
         currencySymbol = locale.currencySymbol!
         resetFields(self)
-        self.billAmountTextFilled.becomeFirstResponder()
+        self.billAmountTextField.becomeFirstResponder()
     }
     
     @IBAction func resetFields(_ sender: Any) {
-        billAmountTextFilled.text = ""
+        billAmountTextField.text = ""
         tipAmountLabel.text = currencySymbol + String(format: "%.2f", 0)
         totalLabel.text = currencySymbol + String(format: "%.2f", 0)
     }
     
     
     @IBAction func caluclateTip(_ sender: Any) {
-        let bill = Double(billAmountTextFilled.text!) ?? 0
+        let bill = Double(billAmountTextField.text!) ?? 0
         let tipPercentages = [0.15, 0.18, 0.2]
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip

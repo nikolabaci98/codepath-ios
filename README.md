@@ -1,10 +1,10 @@
 # Pre-work - *Tip in Your  Finger Tips*
 
-**Tip in Your  Finger Tips** is a tip calculator application for iOS.
+**Quick Tip** is a tip calculator application for iOS.
 
 Submitted by: **Nikola Baci**
 
-Time spent: **3** hours spent in total
+Time spent: **12** hours spent in total
 
 ## User Stories
 
@@ -17,24 +17,25 @@ The following **optional** features are implemented:
 
 * [ ] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [x] Using locale-specific currency and currency thousands separators.
+* [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x ] Reset button to erase the bill amount
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![gif walkthrough](nikola-quick-tip-calculator.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The core project was easy overall. I faced the most difficulty on the extanding the app with different features. One step that took me a long time to figure out was to to clculate the tip in real time while the user is enterning the bill amount. At the end I resolved this issue by simply adding the billAmountTextField to the calculateTip function with event "editing changed".
+
 
 ## License
 
